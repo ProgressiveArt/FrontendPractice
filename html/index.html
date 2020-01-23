@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UXEPRESS</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/media-main.css" rel="stylesheet">
+    <!--Viewport - это видимая пользователю область веб-страницы. Т.е. это то, что может увидеть пользователь, не прибегая к прокрутке.
+    
+    Атрибут name предназначен для того чтобы указать браузеру, какую именно информацию о странице хотим ему сообщить. В данном случае эта информация касается viewport.
+    
+    Первый параметр (width=device-width) отвечает за то, чтобы ширина видимой области веб-страницы равнялась CSS ширине устройству (device-width). Данная ширина (CSS) - это не физическое разрешение экрана. Это некоторая величина независящая от разрешения экрана. Она предназначена для того, чтобы мобильный адаптивный дизайн сайта отображался на всех устройствах одинаково независимо от их плотности пикселей экрана.
+    
+    Второй параметр initial-scale - устанавливает первоначальный масштаб веб-страницы. Значение 1 означает то, что масштаб равен 100%.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--Главная страница-->
+    <header id="TOPrectangle">
+
+        <!--Шапка, состоящая из строки быстрого доступа и слайдера-->
+        <div id="QuickAccessString">
+            <div class="topleft">
+                <a href="#"><img src="../Images/Group%202.svg" alt="logo"></a>
+
+                <span id="slash"></span>
+
+                <span id="textcolor">Курьерская служба доставки</span>
+            </div>
+            <div class="topright">
+                <div class="podan2">
+                    <img src="../Images/telVectorIcon.svg" alt="Phone" style="padding-right: 10px;">
+                    <span id="textcolor">8 (909) 023-12-51</span>
+                </div>
+                <div id="LogINbox">
+                    <a href="#" id="link1">Вход</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Сам слайдер-->
+        <div id="slider-wrap">
+            <div id="active-slide">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <div class="slider" id="s1">
+                    <div class="text-img">
+                        <div class="text">
+                            <div class="text-top">Срочная доставка день в день</div>
+                            <div class="text-center">Для тех, кто не может ждать у нас есть услуга срочной курьерской доставки корреспондеции и других видов отправлений.</div>
+                            <div class="text-button">
+                                <div id="ZakazText"><a href="#" id="zakaz2"><b>Заказать доставку</b></a></div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <div class="container-img" id="img1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="text-img">
+                        <div class="text">
+                            <div class="text-top">Подписание договора за 1 час</div>
+                            <div class="text-center">В течение часа наш курьер заберёт вашу посылку и подпишет с Вами договор о предоставлении услуг.</div>
+                            <div class="text-button">
+                                <div id="ZakazText"><a href="#" id="zakaz2"><b>Заказать доставку</b></a></div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <div class="container-img" id="img2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+            </div>
+        </div>
+
+    </header>
+    
+    
+
+    <!-- Форма входа -->
+    <div id="container">
+        <form id="authorization">
+
+            <img id="close" src="../Images/RemoveRound.png" alt="close-button.png" style="position:relative;left:100%; top: -10%; width: 40px;">
+
+            <div id="authorizationTitle">
+                Авторизация
+            </div>
+
+            <div id="authorizationInfo">
+                Введите логин и пароль, чтобы войти в личный кабинет
+            </div>
+
+            <div id="inputError"></div>
+
+            <div id="input">
+                <input class="inputItem" type="email" placeholder="Логин" id="email" required>
+
+                <input class="inputItem" type="password" placeholder="Пароль" id="password" minlength="4" required>
+            </div>
+
+            <div id="enterBoxContent">
+                <a href="#" id="authorizationTextEnter">Войти</a>
+            </div>
+        </form>
+    </div>
+
+   
+   <!--Содержание центральной части страницы-->
+    <main id="MiddleOfPage">
+        <span id="fiveStepsToInvite">5 шагов к заявке</span>
+        <div id="steps">
+            <div id="step">
+                <div class="stepImage">
+                    <img src="../Images/ico1.png" alt="calc">
+                </div>
+                <span id="stepHeadtext">Рассчитать стоимость</span>
+
+                <span id="stepBotText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga.</span>
+            </div>
+
+            <div id="step">
+                <div class="stepImage">
+                    <img src="../Images/ico2.png" alt="calc">
+                </div>
+                <span id="stepHeadtext">Вызвать курьера</span>
+                <span id="stepBotText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga.</span>
+            </div>
+
+            <div id="step">
+                <div class="stepImage">
+                    <img src="../Images/ico3.png" alt="calc">
+                </div>
+                <span id="stepHeadtext">Оплатить услуги</span>
+                <span id="stepBotText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga.</span>
+            </div>
+
+            <div id="step">
+                <div class="stepImage">
+                    <img src="../Images/ico4.png" alt="calc">
+                </div>
+                <span id="stepHeadtext">Заключить договор</span>
+                <span id="stepBotText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga.</span>
+            </div>
+
+            <div id="step">
+                <div class="stepImage">
+                    <img src="../Images/ico5.png" alt="calc">
+                </div>
+                <span id="stepHeadtext">Предоставить данные</span>
+                <span id="stepBotText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga.</span>
+            </div>
+        </div>
+
+    </main>
+
+   
+   <!--Контакты-->
+    <footer id="BOTTOMrectangle">
+        <div class="footerboom">
+
+            <div id="logo"><a href="#"><img src="../Images/Group%202.1.svg" alt="logo" style="margin-top: 10px;"></a></div>
+            <div class="compact">
+                <div id="ContacsList">
+                    <a href="#" id="link2">
+                        <div>О компании</div>
+                    </a>
+                    <a href="#" id="link2">
+                        <div>Вакансии</div>
+                    </a>
+                    <a href="#" id="link2">
+                        <div>Клиенту</div>
+                    </a>
+                    <a href="#" id="link2">
+                        <div>Франчайзинг</div>
+                    </a>
+                </div>
+
+                <div id="ContacsList">
+                    <a href="#" id="link2">
+                        <div>Доставка из Китая</div>
+                    </a>
+                    <a href="#" id="link2">
+                        <div>Все услуги</div>
+                    </a>
+                    <a href="#" id="link2">
+                        <div>Акции</div>
+                    </a>
+                </div>
+
+
+                <div id="ContacsList2">
+                    <div id="Contacts2">
+                        <div id="contactInform">
+                            <div>manager@uexpress.ru</div>
+                            <div class="line" id="center-hieght">115221, г. Челябинск, ул. Северная, д. 29-в</div>
+                            <div class="line">Мы работаем по 24 часа 5 дней в неделю</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../auth.js"></script>
+    <script src="../slider.js"></script>
+</body>
+
+</html>

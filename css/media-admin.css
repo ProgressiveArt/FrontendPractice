@@ -1,0 +1,214 @@
+@media only screen and (min-width: 426px) and (max-width: 980px) {
+
+    #slash,
+    .adaptaciya {
+        display: none;
+    }
+
+    #QuickAccessString {
+        width: 97%;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .admin-center {
+        width: 97%;
+    }
+
+    #buttondob {
+        margin: 12% 0 12% 0;
+        padding: 15px 0 15px 0;
+        width: 30%;
+    }
+
+    #dobavizobrazenie {
+
+        width: 100%;
+    }
+
+    #formatErr {
+        margin: 0 10% 0 20%;
+        width: 300%;
+    }
+
+    .footerboom {
+        width: 97%;
+        position: relative;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+
+    .compact {
+        width: 80%;
+        padding-right: 10%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #ContacsList {
+        margin: 0 0% 0 10%;
+    }
+
+    #ContacsList2 {
+        margin: 10% 0% 0% 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    #textar {
+        width: 95%;
+    }
+
+    .dobavil {
+        width: 80%;
+    }
+
+    #uploadedIMG {
+        width: 800px;
+    }
+
+    #Contacts2 {
+        width: 120px;
+    }
+
+    #BOTTOMrectangle {
+        padding: 0 0px 200px 0px;
+        height: 300px;
+    }
+
+    #link2 > div {
+        width: 130px;
+    }
+
+    #logo {
+        margin-right: 0px;
+    }
+
+    #contactInform {
+        width: 150px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-device-width: 425px) {
+    #QuickAccessString {
+        width: 96%;
+    }
+
+    .admin-center {
+        width: 91%;
+    }
+
+    #slash,
+    #textcolor,
+    .podan2 {
+        display: none;
+    }
+
+    #textar {
+        width: 98%;
+    }
+
+
+    #buttondob {
+        width: 65%;
+    }
+
+    .news-wrap__textarea-info {
+        width: 100%;
+    }
+
+    .footerboom {
+        width: 97%;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+
+    #logo {
+        margin-left: 5%;
+        margin-bottom: 10%;
+    }
+
+    .compact {
+        padding-right: 10%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    #ContacsList {
+        margin: 0 0% 0 0%;
+    }
+
+    #ContacsList2 {
+        margin: 10% 0% 0% 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    #inputError {
+        margin-top: 0;
+        height: 200px;
+    }
+
+    #input {
+        margin-top: 0;
+    }
+
+    #container {
+        z-index: 10;
+    }
+
+    #Contacts2 {
+        width: 120px;
+    }
+
+    #BOTTOMrectangle {
+        padding: 0 0px 280px 0px;
+        height: 300px;
+    }
+
+    #link2 > div {
+        width: 130px;
+    }
+
+    #logo {
+        margin-right: 0px;
+    }
+
+    #contactInform {
+        width: 150px;
+    }
+
+    #dobavizobrazenie {
+        position: relative;
+        padding-bottom: 20%;
+    }
+
+    #formatErr {
+        position: absolute;
+        bottom: 18%;
+        left: 0;
+        margin: 0;
+    }
+
+    #uploadedIMG {
+        position: absolute;
+        bottom: -20%;
+        left: 0;
+        margin: 0;
+    }
+}

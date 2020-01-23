@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>UXEPRESS</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/admin.css" rel="stylesheet">
+    <link href="../css/media-admin.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--Шапка страницы-->
+    <header id="TOPrectangle">
+        <div id="QuickAccessString">
+            <div class="topleft">
+                <a href="#"><img src="../Images/Group%202.svg" alt="logo"></a>
+
+                <span id="slash"></span>
+
+                <span id="textcolor" class="adaptaciya">Курьерская служба доставки</span>
+            </div>
+            <div class="topright">
+                <div class="podan2">
+                    <img src="../Images/telVectorIcon.svg" alt="Phone" style="padding-right: 10px;">
+                    <span id="textcolor">8 (909) 023-12-51</span>
+                </div>
+                <div id="LogINbox">
+                    <a href="#" id="link1">Вход</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Содержание страницы(Добавление новости)-->
+    <main id="MiddleOfPageAd">
+        <div class="admin-center">
+            <div class="textarea-max">
+                <div id="zagolovok"><b>Добавить новость</b></div>
+                <span id="podzagolovok">Введите текст новости, а так же приложите изображение (размер: 270x270px)</span>
+
+                <span id="someErr"></span>
+
+
+                <textarea id="textar" maxlength="250" placeholder="Введите текст новости"></textarea>
+                <span class="news-wrap__textarea-info"> </span>
+
+                <!--Добавление изображения-->
+                <div id="dobavizobrazenie">
+                    <div class="dobavil">
+                        <!--Скрытый input-->
+                        <input id="uploadIMG" type="file">
+                        <div id="dzimg">
+                            <img src="../Images/shape.png" alt="image-icon.png"></div>
+                        <div id="dztext">+ Добавить изображение</div>
+
+                        <div id="uploadedIMG">
+                            <img src="" id="uploadedIMGicon">
+                            <span id="uploadedIMGfilename"></span>
+                            <img src="../Images/RemoveRound.png" alt="close-button.png" id="IMGdrop">
+                        </div>
+                    </div>
+                    <div id="formatErr"></div>
+                </div>
+
+
+
+                <a href="#" id="buttondob">Применить</a>
+            </div>
+        </div>
+    </main>
+
+
+    <!--Контакты-->
+    <footer id="BOTTOMrectangle">
+        <div class="footerboom">
+
+            <div id="logo"><a href="#"><img src="../Images/Group%202.1.svg" alt="logo" style="margin-top: 10px;"></a></div>
+            <div class="compact">
+                <div id="ContacsList">
+                    <a href="#" id="link2">
+                        <div>О компании</div>
+                    </a>
+                    <a href="#" id="link2">
+                        <div>Вакансии</div>
+                    </a>
+                    <a href="#" id="link2">
+                        <div>Клиенту</div>
+                    </a>
+                    <a href="#" id="link2">
+                        <div>Франчайзинг</div>
+                    </a>
+                </div>
+
+                <div id="ContacsList">
+                    <a href="#" id="link2">
+                        <div>Доставка из Китая</div>
+                    </a>
+                    <a href="#" id="link2">
+                        <div>Все услуги</div>
+                    </a>
+                    <a href="#" id="link2">
+                        <div>Акции</div>
+                    </a>
+                </div>
+
+
+                <div id="ContacsList2">
+                    <div id="Contacts2">
+                        <div id="contactInform">
+                            <div>manager@uexpress.ru</div>
+                            <div class="line" id="center-hieght">115221, г. Челябинск, ул. Северная, д. 29-в</div>
+                            <div class="line">Мы работаем по 24 часа 5 дней в неделю</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../uploadFiles.js"></script>
+    <script src="../slider.js"></script>
+
+</body>
+
+</html>
