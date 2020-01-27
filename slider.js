@@ -16,10 +16,34 @@ $(label).click(function () {
 
 
 /*Движение слайдов*/
-$('label[for=r1]').click(function(){
-    $('#s1').css('margin-left','0%');
-});
+$(label[0]).click(left);
 
-$('label[for=r2]').click(function(){
-    $('#s1').css('margin-left','-50%');
-});
+$(label[1]).click(right);
+
+function left() {
+    $('#s1').css('margin-left', '0%');
+}
+
+function right() {
+    $('#s1').css('margin-left', '-50%');
+}
+
+
+/* Рекурсивный setTimeout – более гибкий метод, чем setInterval. 
+   С его помощью последующий вызов может быть задан по-разному в зависимости от результатов предыдущего.*/
+var index = 0,
+timeOut = 5000;
+
+setTimeout(function autoplay() {
+
+    if (index < label.length - 1) {
+        right();
+        ++index;
+    } else {
+        left();
+        index = 0;
+    }
+    
+        setTimeout(autoplay, timeOut)
+}, timeOut);
+
