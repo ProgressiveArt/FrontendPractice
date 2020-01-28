@@ -9,10 +9,34 @@ $(document).ready(function () {
 
 var label = $("label[for=r1],label[for=r2]");
 
-$(label).click(function () {
+function change() {
     $(label).css('background', '#264160');
     $(this).css('background', 'none');
-});
+}
+
+$(label).click(change);
+
+/* Рекурсивный setTimeout – более гибкий метод, чем setInterval. 
+   С его помощью последующий вызов может быть задан по-разному в зависимости от результатов предыдущего.*/
+var x = true,
+timeOut = 5000;
+setTimeout(autoslide(),timeOut);
+
+
+function autoslide(){
+    $(label).css('background', '#264160');
+    if(x==false){
+        right();
+        x = true;
+        $(label[1]).css('background', 'none');
+    }
+    else{
+        left();
+        x = false;
+        $(label[0]).css('background', 'none');
+    }
+    setTimeout(autoslide, timeOut);
+}
 
 
 /*Движение слайдов*/
@@ -21,29 +45,14 @@ $(label[0]).click(left);
 $(label[1]).click(right);
 
 function left() {
-    $('#s1').css('margin-left', '0%');
+    $('#s1').css('margin-left', '0%'); 
 }
 
 function right() {
-    $('#s1').css('margin-left', '-50%');
+    $('#s1').css('margin-left', '-50%'); 
 }
 
 
-/* Рекурсивный setTimeout – более гибкий метод, чем setInterval. 
-   С его помощью последующий вызов может быть задан по-разному в зависимости от результатов предыдущего.*/
-var index = 0,
-timeOut = 5000;
 
-setTimeout(function autoplay() {
 
-    if (index < label.length - 1) {
-        right();
-        ++index;
-    } else {
-        left();
-        index = 0;
-    }
-    
-        setTimeout(autoplay, timeOut)
-}, timeOut);
 
